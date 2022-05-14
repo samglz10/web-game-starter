@@ -1,9 +1,14 @@
+html{
+height: 100vh;
+width: 100vw;
+
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #ffffff;
   margin-top: 60px;
 }
 
@@ -14,6 +19,7 @@ body {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: rgb(177, 171, 171);
 }
 
 #browser-window {
@@ -21,15 +27,30 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding:0;
-  border: 5px solid red;
+  padding: 0;
+  border: 5px solid rgb(122, 61, 61);
   height: 70vh;
-  width: auto;
+  width: 60vw;
+  margin: auto;
+  background-image: url(tablebackground.png);
 }
 
 h3 {
-display: flex;
-align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
+  color: white;
+  margin: 0px 400px;
+}
 
-
+button {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgb(122, 61, 61);
+  height: 75px;
+  width: 300px;
+  font-size: 40px;
+  margin: 25px;
 }

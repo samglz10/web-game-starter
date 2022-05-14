@@ -1,4 +1,7 @@
-const miniFly = document.createElement('img');
-    img.src = "web-game-starter/Assets/flyexample.jpg"
-    document.getElementById("browser-window").appendChild(img);
+
+let character = newImage("assets/flyexample.jpg")
+character.style.position = "absolute"
+let direction = null;
+let x = 100;
+let y = 250;
 
