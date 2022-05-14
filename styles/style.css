@@ -54,7 +54,12 @@ button {
   width: 300px;
   font-size: 40px;
   margin: 25px;
+  transition: all 300ms ease;
 }
+button:hover {
+  background-color: red;
+}
+
 .ham {
   position: absolute;
   bottom: 50px;
