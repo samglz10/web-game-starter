@@ -32,7 +32,8 @@ body {
   height: 70vh;
   width: 60vw;
   margin: auto;
-  background-image: url(tablebackground.png);
+  background-image: url("../assets/tablebackground.png");
+  background-size: cover;
 }
 
 h3 {
@@ -53,4 +54,10 @@ button {
   width: 300px;
   font-size: 40px;
   margin: 25px;
+}
+.ham {
+  position: absolute;
+  bottom: 50px;
+  width: 150px;
+  height: auto;
 }
