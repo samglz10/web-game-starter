@@ -1,8 +1,6 @@
 
-let newFly = ("./assets/flyicon.png")
 
-let fly = newFly
+let fly = ('../assets/flyicon.png')
 fly.style.position = "absolute"
-let direction = null;
 let x = 0;
-let y = 0;
+let y= 0;

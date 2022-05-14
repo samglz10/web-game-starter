@@ -33,7 +33,7 @@ body {
   width: 60vw;
   margin: auto;
   background-image: url("../assets/tablebackground.png");
-  background-size: cover;
+  background-size: cover  ;
 }
 
 h3 {
@@ -62,7 +62,7 @@ button:hover {
 
 .ham {
   position: absolute;
-  bottom: 50px;
-  width: 150px;
+  bottom: 5px;
+  width: 300px;
   height: auto;
 }
