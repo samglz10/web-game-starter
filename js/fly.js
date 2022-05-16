@@ -1,15 +1,4 @@
-
-newFly (url){
-
-let image= document.createElement("img");
-image.src = url
-document.body.append(image)
-return image
-
+let fly = document.createElement('img');
+    img src= "./assets/flyicon.png";
+    document.getElementById("browser-window"). appendChild(img);
 }
-/* newFly(url){
-    let image = document.createElement('img')
-    image.src = url
-    document.body.append(image)
-    return image
-*/
