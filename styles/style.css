@@ -66,3 +66,16 @@ button:hover {
   width: 300px;
   height: auto;
 }
+
+.fly {
+  height: 10%;
+  width: auto;
+  border: 5px solid red;
+  transform: rotateY(180deg);
+}
+.hp-bar {
+  height: 10%;
+  width: auto;
+  border: 5px solid red;
+  object-position: top;
+}

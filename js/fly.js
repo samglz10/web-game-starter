@@ -1,4 +1,6 @@
-let fly = document.createElement('img');
-    img src= "./assets/flyicon.png";
-    document.getElementById("browser-window"). appendChild(img);
-}
+const fly = document.createElement('img');
+    fly.src= "./assets/animatedfly.gif";
+    document.getElementById("browser-window").appendChild(fly);
+    fly.classList.add("fly");
+    
+
