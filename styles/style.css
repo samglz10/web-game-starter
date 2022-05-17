@@ -23,6 +23,7 @@ body {
 }
 
 #browser-window {
+  position: relative;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -33,7 +34,8 @@ body {
   width: 60vw;
   margin: auto;
   background-image: url("../assets/tablebackground.png");
-  background-size: cover  ;
+  background-size: cover;
+  overflow: hidden;
 }
 
 h3 {
@@ -68,14 +70,34 @@ button:hover {
 }
 
 .fly {
+  position: absolute;
   height: 10%;
   width: auto;
   border: 5px solid red;
   transform: rotateY(180deg);
+  /*top: -12%; */
 }
 .hp-bar {
-  height: 10%;
+  height: 8%;
   width: auto;
-  border: 5px solid red;
+  margin: 10px;
   object-position: top;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.fly {
+
+  offset-path: path('M40,20 C20,100 200,0 200,100');
+  animation: move 1500ms infinite alternate ease-in-out;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
 }
