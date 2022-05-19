@@ -1,5 +1,6 @@
-const button = document.querySelector("#restart-button")
+const button = document.querySelector("#restart-button");
 
 button.onclick = () => {
-    window.location.reload();
-}
+	window.location.reload();
+};
+document.getElementById("cursor").style.cursor = "crosshair";
