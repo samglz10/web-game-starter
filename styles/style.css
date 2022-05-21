@@ -34,16 +34,25 @@ body {
   width: 60vw;
   margin: auto;
   background-image: url("../assets/tablebackground.png");
-  background-size: cover;
+  background-size: cover; 
   overflow: hidden;
-  cursor: url("../assets/flyicon.png"), crosshair;
+  cursor: url("../assets/flyswatter2.png"), crosshair;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
 }
 
 h3 {
   display: flex;
+  justify-content: left;
   align-items: flex-start;
   color: white;
   margin: 0px 400px;
+  position: initial;
 }
 
 button {
@@ -69,11 +78,14 @@ button:hover {
   width: 300px;
   height: auto;
 }
-
+img {
+  pointer-events: none
+}
 .fly {
   position: absolute;
   height: 10%;
   width: auto;
+  border: 1px solid red;
   /*top: -12%;*/
   
 }
