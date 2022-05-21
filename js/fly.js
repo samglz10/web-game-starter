@@ -2,7 +2,7 @@ const createFly = () => {
 // fly needs to reach bottom value to reach the meat
 
 	const fly = document.createElement("img");
-	fly.src= "./assets/flyicon.svg";
+	fly.src= "./assets/flyicon.png";
 	document.getElementById("browser-window").appendChild(fly);
 	fly.classList.add("fly");
 
@@ -29,13 +29,13 @@ const DOMElement = {
 	flyObject.style.position = "absolute";
 
 	const animate = setInterval(() => {
-		position += 2;
-		flyObject.style.left = Math.random()*2 + position + "px";
-		flyObject.style.right = Math.random()*2 + position + "px";
-		flyObject.style.top = position + "px";
+		position += 10;
+		 flyObject.style.left = Math.random()*1000 + position + "px";
+		 flyObject.style.right = Math.random()*1000+ position + "px";
+		 flyObject.style.top = position + "px";
 		console.log(flyObject.style.left);
 
-	}, 10);
+	}, 100);
 
 
 	/*
@@ -50,4 +50,6 @@ const stop = () => {
 
 // Check if Fly postion is at the meat if so clear interval. 
 };
+
+
 export default createFly;

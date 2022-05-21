@@ -74,18 +74,21 @@ button:hover {
 
 .ham {
   position: absolute;
-  bottom: 5px;
+  bottom: -35px;
   width: 300px;
   height: auto;
 }
 img {
-  pointer-events: none
+  /* pointer events removes click eventlisteners */
+  /* pointer-events: none */
+  -webkit-user-drag: none;
 }
 .fly {
   position: absolute;
-  height: 10%;
+  height: 15%;
   width: auto;
-  border: 1px solid red;
+  
+  
   /*top: -12%;*/
   
 }
