@@ -7,7 +7,9 @@ const createFly = () => {
 	fly.classList.add("fly");
 
 	let position = 0;
-	const flyObject = document.querySelector(".fly");
+	let xPosition = Math.random()*100;
+	const flyGoesLeft = Math.random() > .5;
+	//const fly = document.querySelector(".fly");
 	/*
 const DOMElement = {
     tag: "img",
@@ -21,25 +23,31 @@ const DOMElement = {
 }
 */
 
-	flyObject.addEventListener("click",()=>{
-		flyObject.remove();
+	fly.addEventListener("click",()=>{
+		fly.remove();
 	});
 
 
-	flyObject.style.position = "absolute";
+	fly.style.position = "absolute";
 
 	const animate = setInterval(() => {
-		position += 10;
-		 flyObject.style.left = Math.random()*1000 + position + "px";
-		 flyObject.style.right = Math.random()*1000+ position + "px";
-		 flyObject.style.top = position + "px";
-		console.log(flyObject.style.left);
+		position += 5;
+		if (Math.random() > 0.5){
+			xPosition -= flyGoesLeft? 1 : 0.25;
+
+		} else {
+			xPosition += flyGoesLeft? 0.25 : 1;
+		}
+		fly.style.left = xPosition + "%"		 
+		fly.style.top = position + "px";
+		if (position > window.innerHeight);
 
 	}, 100);
 
 
 	/*
 const stop = () => {
+	if ()
 	clearInterval(animate);
 };
 */
