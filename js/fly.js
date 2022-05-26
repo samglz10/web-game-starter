@@ -9,25 +9,12 @@ const createFly = () => {
 	let position = 0;
 	let xPosition = Math.random()*100;
 	const flyGoesLeft = Math.random() > .5;
-	//const fly = document.querySelector(".fly");
-	/*
-const DOMElement = {
-    tag: "img",
-    classList: ["fly"],
-    style: {
-        left: "",
-        bottom: "",
-        position: "static"
-    }
-    addEventListener: (event, callback) => callback()
-}
-*/
 
 	fly.addEventListener("click",()=>{
 		fly.remove();
 	});
 
-
+	
 	fly.style.position = "absolute";
 
 	const animate = setInterval(() => {
@@ -40,17 +27,13 @@ const DOMElement = {
 		}
 		fly.style.left = xPosition + "%"		 
 		fly.style.top = position + "px";
-		if (position > window.innerHeight);
-
+		if (position > window.innerHeight) {
+			fly.remove();
+			clearInterval(animate);
+		}
 	}, 100);
 
 
-	/*
-const stop = () => {
-	if ()
-	clearInterval(animate);
-};
-*/
 
 
 	// Function send Fly to Meat, the clear the interval
