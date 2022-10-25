@@ -1,9 +1,11 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 const createFly = () => {
 // fly needs to reach bottom value to reach the meat
 
 	const fly = document.createElement("img");
 	fly.src= "./assets/flyicon.png";
-	document.getElementById("browser-window").appendChild(fly);
+	document.getElementById("browser-window")!.appendChild(fly)!;
+
 	fly.classList.add("fly");
 
 	let position = 0;
@@ -25,7 +27,7 @@ const createFly = () => {
 		} else {
 			xPosition += flyGoesLeft? 0.25 : 1;
 		}
-		fly.style.left = xPosition + "%"		 
+		fly.style.left = xPosition + "%";		 
 		fly.style.top = position + "px";
 		if (position > window.innerHeight) {
 			fly.remove();
