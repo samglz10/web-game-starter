@@ -1,8 +1,9 @@
 import createFly from "./fly";
-const hpBar = document.createElement("img");
-hpBar.src= "./assets/healthcarrion.png";
-document.getElementById("browser-window")!.appendChild(hpBar)!;
-hpBar.classList.add("hp-bar");
+// use an async function
+//const hpBar = document.createElement("img");
+//hpBar.src= "./assets/healthcarrion.png";
+//document.getElementById("browser-window")!.appendChild(hpBar)!;
+//hpBar.classList.add("hp-bar");
 
 let flyCounter = 0;
 

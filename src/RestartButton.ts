@@ -10,7 +10,7 @@ document.getElementById("cursor")!.style.cursor = "crosshair";
 const myScore = () => {
 	let scoreCounter = 0;
 	const scoreboard = document.getElementById("scoreboard") as HTMLInputElement;
-	scoreboard?.value = scoreCounter;
+	scoreboard!.value = scoreCounter;
 	for (let score = 0; score++ < 20;)
 		scoreCounter++;
 
